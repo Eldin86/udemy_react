@@ -1,0 +1,2 @@
+- (162 lekcija) axios GET method
+- (170 lekcija) handling errors axios
