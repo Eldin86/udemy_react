@@ -18,7 +18,7 @@ class NewPost extends Component {
         }
         //Kad radimo post moramo proslijediti sta saljemo u bazu
         //Proslijedili smo objekat ali ce axios automatski da ga stringify
-        axios.post('https://jsonplaceholder.typicode.com/posts', data)
+        axios.post('/posts', data)
             .then(response => {
                 console.log(response)
             })

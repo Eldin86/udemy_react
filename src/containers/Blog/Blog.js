@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+//import axios from 'axios'
+import axios from '../../axios'
 
 import Post from '../../components/Post/Post';
 import FullPost from '../../components/FullPost/FullPost';
@@ -16,7 +17,7 @@ class Blog extends Component {
 
     componentDidMount(){
         //state moramo updatovati unutar axios metode, inace ne bi dobili podatke
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('/posts')
         .then(response => {
             //Dohvatili smo samo 4 posta sa servera
             const posts = response.data.slice(0, 4);
